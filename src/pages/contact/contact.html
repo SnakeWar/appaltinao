@@ -1,17 +1,22 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Contact
+      Artilharia
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-left></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
+<ion-content>
+  <ion-grid>
+  <ion-row>
+    <ion-col col-8 class="esquerda n"><ion-list>Jogador</ion-list></ion-col>
+    <ion-col col-4 class="direita n"><ion-list>Gol(s)</ion-list></ion-col>
+    </ion-row>
+  <ion-row *ngFor="let gols of artilharia">
+    <ion-col col-8 class="esquerda"><ion-list>{{gols.nome}}</ion-list></ion-col>
+    <ion-col col-4 class="direita"><ion-list>{{gols.gols}}</ion-list></ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>
 </ion-content>
