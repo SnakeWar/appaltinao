@@ -14,7 +14,7 @@ artilharia: any;
 
   constructor(public navCtrl: NavController, public http: Http, public provider: HttpModule) {
 
-	this.http.get('http://localhost/newinter2017/api/artilharia.php')
+	this.http.get('http://altinao2017.mayrcon.com.br/api/artilharia.php')
 	.map(res => res.json())
 	.subscribe(data => {
         this.artilharia = data;

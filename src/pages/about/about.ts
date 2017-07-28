@@ -13,7 +13,7 @@ export class AboutPage {
 jogos: any;
 
   constructor(public navCtrl: NavController, public http: Http, public provider: HttpModule) {
-this.http.get('http://localhost/newinter2017/api/jogos.php')
+this.http.get('http://altinao2017.mayrcon.com.br/api/jogos.php')
 	.map(res => res.json())
 	.subscribe(data => {
         this.jogos = data;

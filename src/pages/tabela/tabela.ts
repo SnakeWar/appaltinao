@@ -11,7 +11,7 @@ import { HttpModule } from '@angular/http';
 export class TabelaPage {
 tabela: any;
   constructor(public navCtrl: NavController, public http: Http, public provider: HttpModule) {
-		this.http.get('http://localhost/newinter2017/api/tabela.php')
+		this.http.get('http://altinao2017.mayrcon.com.br/api/tabela.php')
 			.map(res => res.json())
 			.subscribe(data => {
 		        this.tabela = data;
