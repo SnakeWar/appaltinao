@@ -1,0 +1,20 @@
+<ion-header class="header-color">
+  <ion-navbar>
+    <ion-title>
+      Tabela
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+   <ion-grid>
+  <ion-row>
+    <ion-col col-8 class="esquerda n"><ion-list>Time</ion-list></ion-col>
+    <ion-col col-4 class="direita n"><ion-list>Ponto(s)</ion-list></ion-col>
+    </ion-row>
+  <ion-row *ngFor="let time of tabela">
+    <ion-col col-8 class="esquerda"><ion-list>{{time.nome}}</ion-list></ion-col>
+    <ion-col col-4 class="direita"><ion-list>{{time.pontos}}</ion-list></ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>

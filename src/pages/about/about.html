@@ -1,6 +1,6 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
+<ion-header class="header-color">
+  <ion-navbar class="">
+    <ion-title class="">
       Jogos
     </ion-title>
   </ion-navbar>
@@ -9,7 +9,7 @@
 <ion-content padding>
 <ion-grid>
   <ion-row *ngFor="let jogo of jogos">
-  <ion-col col-12 class="header"><ion-list>{{jogo.data}}</ion-list></ion-col>
+  <ion-col col-12 class="titulo"><ion-list>{{jogo.data}}</ion-list></ion-col>
   <ion-col col-5 class="esquerda n">Time Casa</ion-col>
 <ion-col col-2 class="centro n">Placar</ion-col>
 <ion-col col-5 class="direita n">Time Visitante</ion-col>

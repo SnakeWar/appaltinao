@@ -14,3 +14,24 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.header-color{
+	text-align: center;
+}
+.item-divider{
+	background-color: #283a28 !important;
+	color: #fff;
+	font-weight: bold;
+}
+.scroll-content{
+	background-image: url('http://localhost/newinter2017/img/nike.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.opacity ion-item-divider, ion-item{
+	opacity: 0.8;
+}
+.row{
+	background: #fff;
+	opacity: 0.8;
+}

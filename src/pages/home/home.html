@@ -1,11 +1,11 @@
-<ion-header>
+<ion-header class="header-color">
   <ion-navbar>
     <ion-title>Escalações</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-<ion-item-group>
+<ion-item-group class="opacity">
     <ion-item-divider color="light" *ngFor="let time of timea"><ion-icon name="shirt" item-start></ion-icon>{{time.time}}</ion-item-divider>
     <ion-item *ngFor="let jogador of jogadoresa">{{jogador.nome}}</ion-item>
     <ion-item-divider color="light" *ngFor="let time of timeb"><ion-icon name="shirt" item-start></ion-icon>{{time.time}}</ion-item-divider>
