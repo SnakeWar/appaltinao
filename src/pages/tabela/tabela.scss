@@ -1,8 +1,4 @@
 page-tabela {
-.header{
-	background-color: #283a28;
-	text-align: center;
-}
 .esquerda{
 	text-align: left;
 }
@@ -15,18 +11,13 @@ page-tabela {
 .n{
 	font-weight: bold;
 }
-.row{
-	padding-top: 3px !important;
-	border-bottom: solid 1px #cccccc;
-	/*transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) !important;*/
-}
-ion-grid{
-	margin-top: 10%;
-}
-.lista{
-	padding-top: 15px;
-}
 .divisao{
 	border-left: solid 1px #cccccc;
+}
+ion-item-group{
+	margin-top: 10%;
+}
+ion-content{
+	background-image: url('http://altinao2017.mayrcon.com.br/img/bg3.jpg');
 }
 }
