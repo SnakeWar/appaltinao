@@ -11,11 +11,11 @@
   <ion-grid>
   <ion-row>
     <ion-col col-8 class="esquerda n"><ion-list>Jogador</ion-list></ion-col>
-    <ion-col col-4 class="direita n"><ion-list>Gol(s)</ion-list></ion-col>
+    <ion-col col-4 class="direita n divisao"><ion-list>Gol(s)</ion-list></ion-col>
     </ion-row>
   <ion-row *ngFor="let gols of artilharia">
     <ion-col col-8 class="esquerda"><ion-list>{{gols.nome}}</ion-list></ion-col>
-    <ion-col col-4 class="direita"><ion-list>{{gols.gols}}</ion-list></ion-col>
+    <ion-col col-4 class="direita divisao"><ion-list>{{gols.gols}}</ion-list></ion-col>
   </ion-row>
 </ion-grid>
 </ion-content>
