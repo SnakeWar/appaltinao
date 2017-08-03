@@ -1,0 +1,30 @@
+<ion-header class="header-color">
+  <ion-navbar>
+    <ion-title>
+      Artilharia
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+<ion-content>
+<ion-item-group class="opacity">
+<ion-item-divider>
+<ion-grid>
+<ion-row>
+<ion-col col-8 class="esquerda n titulo"><ion-list class="lista">Jogador</ion-list></ion-col>
+<ion-col col-4 class="direita n divisao titulo"><ion-list class="lista">Gol(s)</ion-list></ion-col>
+</ion-row>
+</ion-grid>
+</ion-item-divider>
+<ion-item>
+<ion-grid>
+<ion-row *ngFor="let time of tabela">
+<ion-col col-8 class="esquerda"><ion-list class="lista">{{gols.nome}}</ion-list></ion-col>
+<ion-col col-4 class="direita divisao"><ion-list class="lista">{{gols.gols}}</ion-list></ion-col>
+</ion-row>
+</ion-grid>
+</ion-item>
+</ion-item-group>
+</ion-content>
+</ion-content>

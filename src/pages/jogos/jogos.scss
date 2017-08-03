@@ -1,0 +1,32 @@
+page-jogos {
+
+.titulo{
+	background-color: #283a28 !important;
+	text-align: center !important;
+	color: #fff !important;
+	font-weight: bold !important;
+	padding-top:15px;
+}
+	ion-col{
+		padding:15px 5px !important;
+	}
+.esquerda{
+	text-align: left;
+}
+.direita{
+	text-align: right;
+}
+.centro{
+	text-align: center;
+}
+.n{
+	font-weight: bold;
+}
+	ion-content{
+		background-image: url('http://altinao2017.mayrcon.com.br/img/bg1.jpg');
+	}
+	.list-md {
+		margin: -2px 0 0px;
+	}
+}
+

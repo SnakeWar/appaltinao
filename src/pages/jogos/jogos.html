@@ -1,0 +1,23 @@
+<ion-header class="header-color">
+  <ion-navbar class="">
+    <ion-title class="">
+      Jogos
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<ion-grid>
+  <ion-row *ngFor="let jogo of jogos">
+  <ion-col col-12 class="titulo"><ion-list>{{jogo.data}}</ion-list></ion-col>
+  <ion-col col-4 class="esquerda n">Time Casa</ion-col>
+<ion-col col-4 class="centro n placar">Placar</ion-col>
+<ion-col col-4 class="direita n">Time Visitante</ion-col>
+    <ion-col col-4 class="esquerda"><ion-list>{{jogo.time_casa}}</ion-list></ion-col>
+    <ion-col col-1 class="direita"><ion-list>{{jogo.placar_casa}}</ion-list></ion-col>
+      <ion-col col-2 class="centro x"><ion-list>x</ion-list></ion-col>
+    <ion-col col-1 class="esquerda"><ion-list>{{jogo.placar_visitante}}</ion-list></ion-col>
+    <ion-col col-4 class="direita"><ion-list>{{jogo.time_visitante}}</ion-list></ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>
