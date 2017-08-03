@@ -14,8 +14,17 @@ page-tabela {
 .divisao{
 	border-left: solid 1px #cccccc;
 }
-ion-item-group{
+ion-list{
+		padding-top: 15px;
+		padding-right: 15px;
+		padding-left: 15px;
+}
+
+	ion-item-group{
 	margin-top: 10%;
+}
+.label-md {
+	margin: 0px 8px 0px 0;
 }
 ion-content{
 	background-image: url('http://altinao2017.mayrcon.com.br/img/bg3.jpg');
