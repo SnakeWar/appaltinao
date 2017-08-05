@@ -7,7 +7,13 @@
 </ion-header>
 
 <ion-content>
-<ion-content>
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content pullingIcon="arrow-dropdown"
+                           pullingText="Pull to refresh"
+                           refreshingSpinner="circles"
+                           refreshingText="Atualizando...">
+    </ion-refresher-content>
+  </ion-refresher>
 <ion-item-group class="opacity">
 <ion-item-divider>
 <ion-grid>
@@ -18,13 +24,12 @@
 </ion-grid>
 </ion-item-divider>
 <ion-item>
-<ion-grid>
-<ion-row *ngFor="let time of tabela">
+<ion-grid *ngFor="let time of tabela">
+<ion-row >
 <ion-col col-8 class="esquerda"><ion-list class="lista">{{gols.nome}}</ion-list></ion-col>
 <ion-col col-4 class="direita divisao"><ion-list class="lista">{{gols.gols}}</ion-list></ion-col>
 </ion-row>
 </ion-grid>
 </ion-item>
 </ion-item-group>
-</ion-content>
 </ion-content>

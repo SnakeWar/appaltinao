@@ -6,8 +6,16 @@ Tabela
 </ion-navbar>
 </ion-header>
 <ion-content>
+    <ion-refresher (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content pullingIcon="arrow-dropdown"
+                               pullingText="Pull to refresh"
+                               refreshingSpinner="circles"
+                               refreshingText="Atualizando...">
+        </ion-refresher-content>
+    </ion-refresher>
 <ion-item-group class="opacity">
-<ion-item-divider><ion-grid>
+<ion-item-divider>
+    <ion-grid>
 <ion-row>
 <ion-col col-8 class="esquerda n titulo"><ion-list class="lista">Time</ion-list></ion-col>
 <ion-col col-4 class="direita n divisao titulo"><ion-list class="lista">Ponto(s)</ion-list></ion-col>

@@ -1,32 +1,44 @@
 page-jogos {
+	.titulo{
+		padding-top:10px;
+		padding-bottom:5px;
+	}
+	.esquerda{
+		text-align: left;
+	}
+	.direita{
+		text-align: right;
+	}
+	.centro{
+		text-align: center;
+	}
+	.n{
+		font-weight: bold;
+	}
 
-.titulo{
-	background-color: #283a28 !important;
-	text-align: center !important;
-	color: #fff !important;
-	font-weight: bold !important;
-	padding-top:15px;
+ion-item-group{
+	//background-image: url('http://altinao2017.mayrcon.com.br/img/bg1.jpg');
+	//background-repeat: no-repeat;
+	//background-size: cover;
+	//background-position: center center;
+	//height:100%;
 }
-	ion-col{
-		padding:15px 5px !important;
+	.divisao{
+		border-left: solid 1px #cccccc;
+
 	}
-.esquerda{
-	text-align: left;
-}
-.direita{
-	text-align: right;
-}
-.centro{
-	text-align: center;
-}
-.n{
-	font-weight: bold;
-}
-	ion-content{
-		background-image: url('http://altinao2017.mayrcon.com.br/img/bg1.jpg');
+	.label-md {
+		margin: 0px 8px 0px 0;
 	}
-	.list-md {
-		margin: -2px 0 0px;
+ion-item{
+	padding: 0px 0px !important;
+
+}
+	.list-md{
+		margin: 2px -5px;
+	}
+	.fonte{
+		font-size: 14px;
 	}
 }
 

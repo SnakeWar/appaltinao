@@ -21,12 +21,16 @@ ion-list{
 }
 
 	ion-item-group{
-	margin-top: 10%;
+
 }
 .label-md {
 	margin: 0px 8px 0px 0;
 }
-ion-content{
-	background-image: url('http://altinao2017.mayrcon.com.br/img/bg3.jpg');
+ion-item-group{
+	//background-image: url('http://altinao2017.mayrcon.com.br/img/bg3.jpg');
+	//background-repeat: no-repeat;
+	//background-size: cover;
+	//background-position: center center;
+	//height: 100%;
 }
 }

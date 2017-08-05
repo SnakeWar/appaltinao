@@ -7,17 +7,35 @@
 </ion-header>
 
 <ion-content padding>
-<ion-grid>
-  <ion-row *ngFor="let jogo of jogos">
-  <ion-col col-12 class="titulo"><ion-list>{{jogo.data}}</ion-list></ion-col>
-  <ion-col col-4 class="esquerda n">Time Casa</ion-col>
-<ion-col col-4 class="centro n placar">Placar</ion-col>
-<ion-col col-4 class="direita n">Time Visitante</ion-col>
-    <ion-col col-4 class="esquerda"><ion-list>{{jogo.time_casa}}</ion-list></ion-col>
-    <ion-col col-1 class="direita"><ion-list>{{jogo.placar_casa}}</ion-list></ion-col>
-      <ion-col col-2 class="centro x"><ion-list>x</ion-list></ion-col>
-    <ion-col col-1 class="esquerda"><ion-list>{{jogo.placar_visitante}}</ion-list></ion-col>
-    <ion-col col-4 class="direita"><ion-list>{{jogo.time_visitante}}</ion-list></ion-col>
-  </ion-row>
-</ion-grid>
+    <ion-refresher (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content pullingIcon="arrow-dropdown"
+                               pullingText="Pull to refresh"
+                               refreshingSpinner="circles"
+                               refreshingText="Atualizando...">
+        </ion-refresher-content>
+    </ion-refresher>
+    <div class="opacity">
+    <ion-item-group *ngFor="let jogo of jogos" >
+        <ion-item-divider>
+            <ion-grid>
+                <ion-row>
+                    <ion-col col-12 class="centro n titulo"><ion-list class="lista">{{jogo.data}}</ion-list></ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-item-divider>
+        <ion-item>
+            <ion-grid>
+                <ion-row>
+                    <ion-col col-4 class="direita n"><ion-list>Time Casa</ion-list></ion-col>
+                    <ion-col col-4 class="centro n placar"><ion-list>Placar</ion-list></ion-col>
+                    <ion-col col-4 class="esquerda n"><ion-list>Time Visitante</ion-list></ion-col>
+                    <ion-col col-4 class="direita fonte"><ion-list>{{jogo.time_casa}}</ion-list></ion-col>
+                    <ion-col col-4 class="centro x fonte"><ion-list>{{jogo.placar_casa}} x {{jogo.placar_visitante}}</ion-list></ion-col>
+                    <ion-col col-4 class="esquerda fonte"><ion-list>{{jogo.time_visitante}}</ion-list></ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-item>
+    </ion-item-group>
+    </div>
+
 </ion-content>

@@ -1,8 +1,14 @@
 page-inicial {
-	ion-item-divider{
-		margin-top: 10px;
+	ion-list{
+		border-bottom: solid 1px #8f8f8f !important;
 	}
-	ion-content{
-	background-image: url('http://altinao2017.mayrcon.com.br/img/jogador1.jpg');
-}
+	.n{
+		font-weight: bold;
+	}
+	.lista .titulo{
+		background: #283a28;
+		color: #fff;
+		border-bottom: solid 1px #283a28 !important;
+	}
+
 }

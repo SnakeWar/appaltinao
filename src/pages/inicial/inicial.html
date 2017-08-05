@@ -5,12 +5,46 @@
 </ion-header>
 
 <ion-content padding>
-<ion-item-group class="opacity">
-    <ion-item-divider color="light" *ngFor="let time of timea"><ion-icon name="shirt" item-start></ion-icon>{{time.time}}</ion-item-divider>
-    <ion-item *ngFor="let jogador of jogadoresa">{{jogador.nome}}</ion-item>
-    <ion-item-divider color="light" *ngFor="let time of timeb"><ion-icon name="shirt" item-start></ion-icon>{{time.time}}</ion-item-divider>
-    <ion-item *ngFor="let jogador of jogadoresb">{{jogador.nome}}</ion-item>
-    <ion-item-divider color="light" *ngFor="let time of timec"><ion-icon name="shirt" item-start></ion-icon>{{time.time}}</ion-item-divider>
-    <ion-item *ngFor="let jogador of jogadoresc">{{jogador.nome}}</ion-item>
-  </ion-item-group>
+
+    <ion-refresher (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content pullingIcon="arrow-dropdown"
+                               pullingText="Pull to refresh"
+                               refreshingSpinner="circles"
+                               refreshingText="Atualizando...">
+        </ion-refresher-content>
+    </ion-refresher>
+    <ion-list class="lista">
+        <ion-item class="titulo" *ngFor="let time of timea">
+            <ion-avatar item-start>
+                <img src="http://altinao2017.mayrcon.com.br/img/barsemlona.png">
+            </ion-avatar>
+            <h2 class="n">{{time.time}}</h2>
+        </ion-item>
+        <ion-item *ngFor="let jogador of jogadoresa">
+            <p>{{jogador.nome}}</p>
+        </ion-item>
+    </ion-list>
+    <ion-list class="lista">
+        <ion-item class="titulo" *ngFor="let time of timeb">
+            <ion-avatar item-start>
+                <img src="http://altinao2017.mayrcon.com.br/img/laranjada.png">
+            </ion-avatar>
+            <h2 class="n">{{time.time}}</h2>
+        </ion-item>
+        <ion-item *ngFor="let jogador of jogadoresb">
+            <p>{{jogador.nome}}</p>
+        </ion-item>
+    </ion-list>
+    <ion-list class="lista">
+        <ion-item class="titulo" *ngFor="let time of timec">
+            <ion-avatar item-start>
+                <img src="http://altinao2017.mayrcon.com.br/img/pecomchule.png">
+            </ion-avatar>
+            <h2 class="n">{{time.time}}</h2>
+        </ion-item>
+        <ion-item *ngFor="let jogador of jogadoresc">
+            <p>{{jogador.nome}}</p>
+        </ion-item>
+    </ion-list>
+
 </ion-content>
