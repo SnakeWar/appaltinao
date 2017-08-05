@@ -1,31 +1,13 @@
 page-tabela {
-.esquerda{
-	text-align: left;
-}
-.direita{
-	text-align: right;
-}
-.centro{
-	text-align: center;
-}
-.n{
+
+	.n{
 	font-weight: bold;
 }
-.divisao{
-	border-left: solid 1px #cccccc;
-}
-ion-list{
-		padding-top: 15px;
-		padding-right: 15px;
-		padding-left: 15px;
-}
-
-	ion-item-group{
-
-}
-.label-md {
-	margin: 0px 8px 0px 0;
-}
+	.lista .titulo{
+		background: #283a28;
+		color: #fff;
+		border-bottom: solid 1px #283a28 !important;
+	}
 ion-item-group{
 	//background-image: url('http://altinao2017.mayrcon.com.br/img/bg3.jpg');
 	//background-repeat: no-repeat;

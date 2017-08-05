@@ -14,34 +14,34 @@
         </ion-refresher-content>
     </ion-refresher>
     <ion-list class="lista">
-        <ion-item class="titulo" *ngFor="let time of timea">
+        <ion-item-divider class="titulo" *ngFor="let time of timea">
             <ion-avatar item-start>
                 <img src="http://altinao2017.mayrcon.com.br/img/barsemlona.png">
             </ion-avatar>
             <h2 class="n">{{time.time}}</h2>
-        </ion-item>
+        </ion-item-divider>
         <ion-item *ngFor="let jogador of jogadoresa">
             <p>{{jogador.nome}}</p>
         </ion-item>
     </ion-list>
     <ion-list class="lista">
-        <ion-item class="titulo" *ngFor="let time of timeb">
+        <ion-item-divider class="titulo" *ngFor="let time of timeb">
             <ion-avatar item-start>
                 <img src="http://altinao2017.mayrcon.com.br/img/laranjada.png">
             </ion-avatar>
             <h2 class="n">{{time.time}}</h2>
-        </ion-item>
+        </ion-item-divider>
         <ion-item *ngFor="let jogador of jogadoresb">
             <p>{{jogador.nome}}</p>
         </ion-item>
     </ion-list>
     <ion-list class="lista">
-        <ion-item class="titulo" *ngFor="let time of timec">
+        <ion-item-divider class="titulo" *ngFor="let time of timec">
             <ion-avatar item-start>
                 <img src="http://altinao2017.mayrcon.com.br/img/pecomchule.png">
             </ion-avatar>
             <h2 class="n">{{time.time}}</h2>
-        </ion-item>
+        </ion-item-divider>
         <ion-item *ngFor="let jogador of jogadoresc">
             <p>{{jogador.nome}}</p>
         </ion-item>

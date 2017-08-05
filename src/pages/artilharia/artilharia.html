@@ -14,22 +14,15 @@
                            refreshingText="Atualizando...">
     </ion-refresher-content>
   </ion-refresher>
-<ion-item-group class="opacity">
-<ion-item-divider>
-<ion-grid>
-<ion-row>
-<ion-col col-8 class="esquerda n titulo"><ion-list class="lista">Jogador</ion-list></ion-col>
-<ion-col col-4 class="direita n divisao titulo"><ion-list class="lista">Gol(s)</ion-list></ion-col>
-</ion-row>
-</ion-grid>
-</ion-item-divider>
-<ion-item>
-<ion-grid *ngFor="let time of tabela">
-<ion-row >
-<ion-col col-8 class="esquerda"><ion-list class="lista">{{gols.nome}}</ion-list></ion-col>
-<ion-col col-4 class="direita divisao"><ion-list class="lista">{{gols.gols}}</ion-list></ion-col>
-</ion-row>
-</ion-grid>
-</ion-item>
-</ion-item-group>
+  <ion-list class="lista">
+    <ion-item-divider class="titulo">
+      <ion-icon name="shirt" item-start></ion-icon>
+      <h5 class="n">Jogador</h5>
+      <h5 item-end class="n">Gol(s)</h5>
+    </ion-item-divider>
+    <ion-item *ngFor="let time of tabela">
+      <h5 item-start>{{gols.nome}}</h5>
+      <p item-end> {{gols.gols}}</p>
+    </ion-item>
+  </ion-list>
 </ion-content>
