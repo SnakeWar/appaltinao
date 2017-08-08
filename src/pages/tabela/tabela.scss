@@ -2,17 +2,19 @@ page-tabela {
 
 	.n{
 	font-weight: bold;
-}
-	.lista .titulo{
+	}
+	.lista .titulo ion-grid ion-row{
 		background: #283a28;
 		color: #fff;
 		border-bottom: solid 1px #283a28 !important;
 	}
-ion-item-group{
-	//background-image: url('http://altinao2017.mayrcon.com.br/img/bg3.jpg');
-	//background-repeat: no-repeat;
-	//background-size: cover;
-	//background-position: center center;
-	//height: 100%;
-}
+	.direita{
+		text-align: right;
+	}
+	.scroll-content{
+		background-image: url('http://altinao2017.mayrcon.com.br/img/bg3.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+	}
 }

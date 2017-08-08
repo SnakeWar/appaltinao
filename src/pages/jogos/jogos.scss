@@ -15,13 +15,14 @@ page-jogos {
 	.n{
 		font-weight: bold;
 	}
-
-ion-item-group{
-	//background-image: url('http://altinao2017.mayrcon.com.br/img/bg1.jpg');
-	//background-repeat: no-repeat;
-	//background-size: cover;
-	//background-position: center center;
-	//height:100%;
+	.data{
+		padding-right: 15px;
+	}
+	.scroll-content{
+		background-image: url('http://altinao2017.mayrcon.com.br/img/bg1.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
 }
 
 	.label-md {
@@ -33,6 +34,9 @@ ion-item-group{
 	}
 	.list-md{
 		margin: 2px -5px;
+	}
+	.jogos{
+		margin-bottom: 10px;
 	}
 
 }

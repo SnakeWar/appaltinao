@@ -15,13 +15,26 @@ Tabela
     </ion-refresher>
     <ion-list class="lista">
         <ion-item-divider class="titulo">
-        <ion-icon name="shirt" item-start></ion-icon>
-        <h5 class="n">Time</h5>
-        <h5 item-end class="n">Ponto(s)</h5>
+        <ion-grid>
+                <ion-row>
+                    <ion-col col-4>Time</ion-col>
+                    <ion-col class="direita" col2> GP</ion-col>
+                    <ion-col class="direita" col2> GC</ion-col>
+                    <ion-col class="direita" col2> Saldo</ion-col>
+                    <ion-col class="direita" col2> Ponto(s)</ion-col>
+                </ion-row>
+            </ion-grid>
     </ion-item-divider>
         <ion-item *ngFor="let time of tabela">
-            <h5 name="" item-start>{{time.nome}}</h5>
-            <p name="" item-end> {{time.pontos}}</p>
+            <ion-grid>
+                <ion-row>
+                    <ion-col col-4>{{time.nome}}</ion-col>
+                    <ion-col class="direita" col2>{{time.gols_pro}}</ion-col>
+                    <ion-col class="direita" col2>{{time.gols_con}}</ion-col>
+                    <ion-col class="direita" col2>{{time.saldo}}</ion-col>
+                    <ion-col class="direita" col2> {{time.pontos}}</ion-col>
+                </ion-row>
+            </ion-grid>
         </ion-item>
     </ion-list>
 </ion-content>
