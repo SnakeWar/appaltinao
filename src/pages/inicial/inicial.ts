@@ -3,6 +3,8 @@ import { NavController } from 'ionic-angular';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { HttpModule } from '@angular/http';
+import { ViewChild } from '@angular/core';
+import { Slides } from 'ionic-angular';   
 
 @Component({
   selector: 'page-inicial',
@@ -10,6 +12,8 @@ import { HttpModule } from '@angular/http';
 })
 export class InicialPage {
 	
+  @ViewChild(Slides) slides: Slides;
+
   jogadoresa: any;
   jogadoresb: any;
   jogadoresc: any;
