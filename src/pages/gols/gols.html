@@ -1,0 +1,38 @@
+<ion-header class="header-color">
+  <ion-navbar class="">
+    <ion-title class="">
+      Gols
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-refresher (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content pullingIcon="arrow-dropdown"
+                               pullingText="Pull to refresh"
+                               refreshingSpinner="circles"
+                               refreshingText="Atualizando...">
+        </ion-refresher-content>
+    </ion-refresher>
+    <div class="opacity">
+    <ion-item-group class="jogos">
+        <ion-item-divider>
+        <ion-grid>
+            <ion-row>
+                    <ion-col col-6 class="esquerda n"><ion-list>Jogador</ion-list></ion-col>
+                    <ion-col col-6 class="centro n placar"><ion-list>Gol(s)</ion-list></ion-col>
+            </ion-row>
+        </ion-grid>
+        </ion-item-divider>
+        <ion-item >
+            <ion-grid *ngFor="let gol of gols" >
+                <ion-row>
+                    <ion-col col-6 class="esquerda fonte"><ion-list>{{gol.jogador</ion-list></ion-col>
+                    <ion-col col-6 class="centro fonte"><ion-list>{{gol.gols}}</ion-list></ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-item>
+    </ion-item-group>
+    </div>
+
+</ion-content>

@@ -9,6 +9,7 @@ import { ArtilhariaPage } from '../pages/artilharia/artilharia';
 import { TabelaPage } from '../pages/tabela/tabela';
 import { TabsPage } from '../pages/tabs/tabs';
 import { InicialPage } from '../pages/inicial/inicial';
+import { GolsPage } from '../pages/gols/gols';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -20,6 +21,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ArtilhariaPage,
     TabelaPage,
     InicialPage,
+    GolsPage,
     TabsPage
   ],
   imports: [
@@ -34,6 +36,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ArtilhariaPage,
     TabelaPage,
     InicialPage,
+    GolsPage,
     TabsPage
   ],
   providers: [
