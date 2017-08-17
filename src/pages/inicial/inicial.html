@@ -13,6 +13,9 @@
                                refreshingText="Atualizando...">
         </ion-refresher-content>
     </ion-refresher>
+    
+    <ion-slides pager=true>
+    <ion-slide>
     <ion-list class="lista">
         <ion-item-divider class="titulo" *ngFor="let time of timea">
             <ion-avatar item-start>
@@ -24,6 +27,8 @@
             <p class="n">{{jogador.nome}}</p>
         </ion-item>
     </ion-list>
+    </ion-slide>
+    <ion-slide>
     <ion-list class="lista">
         <ion-item-divider class="titulo" *ngFor="let time of timeb">
             <ion-avatar item-start>
@@ -35,6 +40,8 @@
             <p class="n">{{jogador.nome}}</p>
         </ion-item>
     </ion-list>
+    </ion-slide>
+    <ion-slide>
     <ion-list class="lista">
         <ion-item-divider class="titulo" *ngFor="let time of timec">
             <ion-avatar item-start>
@@ -46,5 +53,7 @@
             <p class="n">{{jogador.nome}}</p>
         </ion-item>
     </ion-list>
+</ion-slide>
+</ion-slides>
 
 </ion-content>
