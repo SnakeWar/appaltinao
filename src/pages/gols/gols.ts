@@ -18,11 +18,11 @@ gols: any;
 	let link = 'http://altinao2017.mayrcon.com.br/api/gols.php';
         let postData = params.get('userId');
         console.log('UserId', params.get('userId'));
-        console.log(postData)
-        this.http.post(link, postData)
+        console.log(postData);
+        this.http.post(link,{id: postData})
         .subscribe(data => {
-          this.gols = data; //https://stackoverflow.com/questions/39574305/property-body-does-not-exist-on-type-response
-          console.log(data);
+          this.gols = JSON.parse(data['_body']); //https://stackoverflow.com/questions/39574305/property-body-does-not-exist-on-type-response
+          console.log(this.gols);
         }, error => {
 
         });
