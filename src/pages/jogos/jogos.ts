@@ -3,7 +3,7 @@ import { NavController } from 'ionic-angular';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { HttpModule } from '@angular/http';
-import { ModalController, NavParams } from 'ionic-angular';
+import { ModalController } from 'ionic-angular';
 import { GolsPage } from '../gols/gols';
 
 @Component({
@@ -44,8 +44,7 @@ id_jogo: any;
         });
     }*/
     presentProfileModal(id_jogo) {
-      
-      let gols = this.id_jogo;
+
       console.log('ID JOGO: ' + id_jogo);
    let profileModal = this.modalCtrl.create(GolsPage, { userId: id_jogo });
    profileModal.present();
