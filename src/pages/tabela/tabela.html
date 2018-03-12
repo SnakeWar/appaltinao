@@ -17,24 +17,24 @@ Tabela
         <ion-item-divider class="titulo">
         <ion-grid>
                 <ion-row>
-                    <ion-col col-4>Time</ion-col>
-                    <ion-col class="direita" col2> Vitórias</ion-col>
-                    <ion-col class="direita" col2> GP</ion-col>
-                    <ion-col class="direita" col2> GC</ion-col>
-                    <ion-col class="direita" col2> Saldo</ion-col>
-                    <ion-col class="direita" col2> Ponto(s)</ion-col>
+                    <ion-col class="esquerda" col-4>Time</ion-col>
+                    <ion-col class="esquerda" col2> V</ion-col>
+                    <ion-col class="esquerda" col2> GP</ion-col>
+                    <ion-col class="esquerda" col2> GC</ion-col>
+                    <ion-col class="esquerda" col2> S</ion-col>
+                    <ion-col class="esquerda" col2> Ponto(s)</ion-col>
                 </ion-row>
             </ion-grid>
     </ion-item-divider>
         <ion-item *ngFor="let time of tabela">
             <ion-grid>
                 <ion-row>
-                    <ion-col col-4>{{time.nome}}</ion-col>
-                    <ion-col class="direita" col2>{{time.vitorias}}</ion-col>
-                    <ion-col class="direita" col2>{{time.gols_pro}}</ion-col>
-                    <ion-col class="direita" col2>{{time.gols_con}}</ion-col>
-                    <ion-col class="direita" col2>{{time.saldo}}</ion-col>
-                    <ion-col class="direita" col2> {{time.pontos}}</ion-col>
+                    <ion-col class="esquerda" col-4>{{time.nome}}</ion-col>
+                    <ion-col class="esquerda" col2>{{time.vitorias}}</ion-col>
+                    <ion-col class="esquerda" col2>{{time.gols_pro}}</ion-col>
+                    <ion-col class="esquerda" col2>{{time.gols_con}}</ion-col>
+                    <ion-col class="esquerda" col2>{{time.saldo}}</ion-col>
+                    <ion-col class="esquerda" col2> {{time.pontos}}</ion-col>
                 </ion-row>
             </ion-grid>
         </ion-item>
