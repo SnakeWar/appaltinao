@@ -15,7 +15,7 @@ export class GolsPage {
 gols: any;
 
   constructor(public navCtrl: NavController, public http: Http, public provider: HttpModule, public modalCtrl: ModalController, params: NavParams) {
-	let link = 'http://altinao2017.mayrcon.com.br/api/gols.php';
+	let link = 'http://api.mayrcon.com.br/api/gols.php';
         let postData = params.get('userId');
         console.log('UserId', params.get('userId'));
         console.log(postData);

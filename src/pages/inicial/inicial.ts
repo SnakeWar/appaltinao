@@ -24,38 +24,38 @@ export class InicialPage {
 
   constructor(public navCtrl: NavController, public http: Http, public provider: HttpModule) {
 	
-	this.http.get('http://altinao2017.mayrcon.com.br/api/time_a.php')
+	this.http.get('http://api.mayrcon.com.br/api/time_a.php')
 	.map(res => res.json())
 	.subscribe(data => {
         this.jogadoresa = data;
         console.log(data);
     });
-  this.http.get('http://altinao2017.mayrcon.com.br/api/time_b.php')
+  this.http.get('http://api.mayrcon.com.br/api/time_b.php')
 	.map(res => res.json())
 	.subscribe(data => {
         this.jogadoresb = data;
         console.log(data);
     });
-  this.http.get('http://altinao2017.mayrcon.com.br/api/time_c.php')
+  this.http.get('http://api.mayrcon.com.br/api/time_c.php')
   .map(res => res.json())
   .subscribe(data => {
         this.jogadoresc = data;
         console.log(data);
     });
 
-  this.http.get('http://altinao2017.mayrcon.com.br/api/nome_time_a.php')
+  this.http.get('http://api.mayrcon.com.br/api/nome_time_a.php')
   .map(res => res.json())
   .subscribe(data => {
         this.timea = data;
         console.log(data);
     });
-  this.http.get('http://altinao2017.mayrcon.com.br/api/nome_time_b.php')
+  this.http.get('http://api.mayrcon.com.br/api/nome_time_b.php')
   .map(res => res.json())
   .subscribe(data => {
         this.timeb = data;
         console.log(data);
     });
-  this.http.get('http://altinao2017.mayrcon.com.br/api/nome_time_c.php')
+  this.http.get('http://api.mayrcon.com.br/api/nome_time_c.php')
   .map(res => res.json())
   .subscribe(data => {
         this.timec = data;
