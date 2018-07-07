@@ -59,7 +59,7 @@ export class InicialPage {
   .map(res => res.json())
   .subscribe(data => {
         this.timec = data;
-        console.log(data);
+        console.log(this.timec);
     });
   }
     doRefresh(refresher) {

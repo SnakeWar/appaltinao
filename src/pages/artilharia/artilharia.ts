@@ -19,6 +19,7 @@ artilharia: any;
 	.subscribe(data => {
         this.artilharia = data;
         console.log(data);
+
     });
   }
     doRefresh(refresher) {
